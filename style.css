@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: rgb(163, 37, 210);
+}
+
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(200, 50, 226);
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin:auto;
+    max-width: 1400px;
+}
+
+.color-acento{color:rgb(200, 50, 226);}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style:none;}
+li{font-size: 1.25em;}
+
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+    font-size: 3.2em;
+}
+
+#somos-proya .container{
+    
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+#nuestros-programas .container{
+   padding: 100px 0px;
+}
+
+#nuestros-programas p{
+    display:none;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.4em;
+}
+
+#nuestros-programas .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url("media/front-end.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url("media/full-stack.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url("media/python.jpg");
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(217, 54, 239);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    background-color: rgb(200, 50, 226);
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+   margin: 15px 0px;
+   font-weight: bold;
+}
+
+#aplicar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    height: 80vh;
+}
+
+#aplicar button{
+    font-size: 3vh;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40vh;
+}
+
+footer p{
+    color: rgb(88, 88, 88);
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+}
+
+@media (min-width:720px) {
+    
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80px;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 12px;
+    }
+
+    #hero h1{
+        font-size: 4.5em;
+    }
+
+    #somos-proya .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #caracteristicas{
+        background-image: url("media/somos-proya.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px; 
+        background-position: calc(100vw - 340px) 120px;
+    }
+    #caracteristicas ul{
+        padding-top: 10px;
+    }
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #aplicar h2{
+        font-size: 2.0em;
+    }
+
+    #aplicar button{
+        font-size: 1.5em;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+    footer .container{
+        height: 30vh;
+    }
+
+}
+
+@media (min-width:1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 570px);
+    }
+}
