@@ -82,7 +82,6 @@ li{font-size: 1.25em;}
 }
 
 #somos-proya .container{
-    
     text-align: center;
     padding: 200px 12px;
 }
@@ -150,6 +149,7 @@ button:hover{
 #caracteristicas li{
    margin: 15px 0px;
    font-weight: bold;
+   margin-right: 25px;
 }
 
 #aplicar{
@@ -229,6 +229,7 @@ footer p{
     }
     #caracteristicas ul{
         padding-top: 10px;
+       
     }
     #caracteristicas .container{
         text-align: initial;
